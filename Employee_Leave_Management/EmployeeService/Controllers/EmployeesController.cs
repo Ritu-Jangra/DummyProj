@@ -20,7 +20,6 @@ namespace EmployeeService
                 Salary = 25000
             };
 
-
             return Ok(employee);
         }
     }

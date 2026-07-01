@@ -1,0 +1,7 @@
+CREATE LOGIN sqluser WITH PASSWORD = 'YourStrongPassword@123';
+
+USE ELMSAuthDB;
+
+CREATE USER sqluser FOR LOGIN sqluser;
+
+ALTER ROLE db_owner ADD MEMBER sqluser;
