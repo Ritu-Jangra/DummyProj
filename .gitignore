@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Employee_Leave_Management/EmployeeService/.config
+/Employee_Leave_Management/EmployeeService/Controllers/EmployeesController.cs
+/Dummy
