@@ -1,26 +1,46 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace EmployeeService
+﻿namespace EmployeeService
 {
+    using Microsoft.AspNetCore.Mvc;
+
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeesController : ControllerBase
     {
-        [HttpGet]
-        public IActionResult GetEmployeeDetails()
+        private readonly IEmployeeService _employeeService;
+
+        public EmployeesController(IEmployeeService employeeService)
         {
-            Employee employee = new Employee()
+            _employeeService = employeeService;
+        }
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetEmployeeDetails(Guid id)
+        {
+            Employee? employee = _employeeService.GetEmployeeById(id);
+            
+            if (employee == null)
             {
-                EmployeeId = Guid.NewGuid(),
-                FirstName = "Test",
-                LastName = "LastName",
-                UserName = "TestLast",
-                Email = "Test@gmail.com",
-                Department = DepartmentType.HR,
-                Salary = 25000
-            };
+                return NotFound();
+            }
 
             return Ok(employee);
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetAllEmployees()
+        {
+            List<Employee> employees = _employeeService.GetAllEmployees();
+
+            if (employees == null || employees.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(employees);
         }
     }
 }
