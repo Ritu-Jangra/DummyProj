@@ -1,0 +1,6 @@
+@LeaveFeature_HostAddress = http://localhost:5057
+
+GET {LeaveFeature_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

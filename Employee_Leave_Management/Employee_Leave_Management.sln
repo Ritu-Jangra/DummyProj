@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37411.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeService", "EmployeeService\EmployeeService.csproj", "{9CD01D65-D955-40CB-898C-0E87C1F30DDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeFeature", "EmployeeService\EmployeeFeature.csproj", "{9CD01D65-D955-40CB-898C-0E87C1F30DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveService", "LeaveService\LeaveService.csproj", "{80DF696A-6A59-4459-B5CC-AACB10226AC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveFeature", "LeaveService\LeaveFeature.csproj", "{80DF696A-6A59-4459-B5CC-AACB10226AC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee_Leave_Management_UnitTests", "Employee_Leave_Management_UnitTests\Employee_Leave_Management_UnitTests.csproj", "{B5D09479-098A-4B81-913F-8FE47675E8B5}"
 EndProject

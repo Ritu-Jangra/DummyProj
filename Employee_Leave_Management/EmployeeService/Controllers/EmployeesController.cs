@@ -1,4 +1,4 @@
-﻿namespace EmployeeService
+﻿namespace EmployeeFeature
 {
     using Microsoft.AspNetCore.Mvc;
 
