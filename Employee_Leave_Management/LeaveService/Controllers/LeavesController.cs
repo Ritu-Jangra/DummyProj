@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LeaveService.Controllers
+namespace LeaveFeature
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,4 +1,4 @@
-﻿namespace LeaveService
+﻿namespace LeaveFeature
 {
     public class Leaves
     {

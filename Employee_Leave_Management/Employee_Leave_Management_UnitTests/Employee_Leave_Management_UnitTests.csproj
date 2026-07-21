@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeService\EmployeeService.csproj" />
+    <ProjectReference Include="..\EmployeeService\EmployeeFeature.csproj" />
   </ItemGroup>
 
   <ItemGroup>
